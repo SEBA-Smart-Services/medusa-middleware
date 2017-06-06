@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ObjectSet ExportMode="Standard" Version="1.8.1.79" Note="TypesFirst">
+  <MetaInformation>
+    <ExportMode Value="Standard" />
+    <RuntimeVersion Value="1.8.1.79" />
+    <SourceVersion Value="1.8.1.79" />
+    <ServerFullPath Value="/Server 1" />
+  </MetaInformation>
+  <ExportedObjects>
+    <OI NAME="Medusa Middleware" TYPE="system.base.Folder">
+      <OI NAME="Programs" TYPE="system.base.Folder" />
+      <OI NAME="WebServices" TYPE="system.base.Folder">
+        <OI NAME="SolarAnalyticsXmlProxyDaily" TYPE="webservice.genericconsume.SimpleXml">
+          <PI Name="PollingInterval" Value="21600" />
+          <PI Name="RetryInterval" Value="60" />
+          <PI Name="URL" Value="http://127.0.0.1:8069/solaranalytics/site_data/23511" />
+          <PI Name="Username" Value="" />
+          <OI NAME="energy_consumed_1" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="Value" RefNull="1" Unit="0xA0002" Value="313735.0732" />
+            <PI Name="XPath" Value="/root/data/item[1]/energy_consumed/text()" />
+          </OI>
+          <OI NAME="energy_expected_1" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="Value" RefNull="1" Unit="0xA0002" Value="65108.3445849608" />
+            <PI Name="XPath" Value="/root/data/item[1]/energy_expected/text()" />
+          </OI>
+          <OI NAME="energy_generated_1" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="Value" RefNull="1" Unit="0xA0002" Value="60773.5564" />
+            <PI Name="XPath" Value="/root/data/item[1]/energy_generated/text()" />
+          </OI>
+          <OI NAME="timestamp_1" TYPE="webservice.genericconsume.point.TimeStampValue">
+            <PI Name="XPath" Value="/root/data/item[1]/t_stamp/text()" />
+            <PI Name="Value" Value="Tx054ee3cdbfe00000" />
+          </OI>
+          <OI NAME="timestamp_2" TYPE="webservice.genericconsume.point.TimeStampValue">
+            <PI Name="XPath" Value="/root/data/item[2]/t_stamp/text()" />
+            <PI Name="Value" Value="Tx054ef7eb97400000" />
+          </OI>
+          <OI NAME="energy_consumed_2" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="Value" RefNull="1" Unit="0xA0002" Value="359523.4662" />
+            <PI Name="XPath" Value="/root/data/item[2]/energy_consumed/text()" />
+          </OI>
+          <OI NAME="energy_expected_2" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="Value" RefNull="1" Unit="0xA0002" Value="123211.197175997" />
+            <PI Name="XPath" Value="/root/data/item[2]/energy_expected/text()" />
+          </OI>
+          <OI NAME="energy_generated_2" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="Value" RefNull="1" Unit="0xA0002" Value="121956.3004" />
+            <PI Name="XPath" Value="/root/data/item[2]/energy_generated/text()" />
+          </OI>
+        </OI>
+        <OI NAME="SolarAnalyticsXmlProxyCustomQuery" TYPE="webservice.genericconsume.SimpleXml">
+          <PI Name="URL" Value="http://127.0.0.1:8069/solaranalytics/site_data/23511?tstart=20150115&amp;tend=20150120&amp;gran=day&amp;raw=true&amp;trunc=false" />
+        </OI>
+        <OI DESCR="site_list" NAME="SolarAnalyticsXmlProxySiteList" TYPE="webservice.genericconsume.SimpleXml">
+          <PI Name="PollingInterval" Value="86400" />
+          <PI Name="URL" Value="http://127.0.0.1:8069/solaranalytics/site_list" />
+          <OI NAME="active" TYPE="webservice.genericconsume.point.DigitalValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/active/text()" />
+            <PI Name="Value" Value="0" />
+          </OI>
+          <OI NAME="city" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/city/text()" />
+            <PI Name="Value" Value="Gordonvale" />
+          </OI>
+          <OI NAME="country" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/country/text()" />
+            <PI Name="Value" Value="Australia" />
+          </OI>
+          <OI NAME="d_type" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/d_type/text()" />
+            <PI Name="Value" Value="1" />
+          </OI>
+          <OI NAME="dc_power" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/dc_power/text()" />
+            <PI Name="Value" Value="30160" />
+          </OI>
+          <OI NAME="item" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/lng_lat/item[1]/text()" />
+            <PI Name="Value" Value="145.787046294" />
+          </OI>
+          <OI NAME="item_1" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/lng_lat/item[2]/text()" />
+            <PI Name="Value" Value="-17.0848682623" />
+          </OI>
+          <OI NAME="postcode" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/postcode/text()" />
+            <PI Name="Value" Value="4865" />
+          </OI>
+          <OI NAME="sa_site_name" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/sa_site_name/text()" />
+            <PI Name="Value" Value="Gordonvale Depot" />
+          </OI>
+          <OI NAME="site_classification" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/site_classification/text()" />
+            <PI Name="Value" Value="residential" />
+          </OI>
+          <OI NAME="site_id" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/site_id/text()" />
+            <PI Name="Value" Value="25075" />
+          </OI>
+          <OI NAME="site_name" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/site_name/text()" />
+            <PI Name="Value" Value="Gordonvale Depot" />
+          </OI>
+          <OI NAME="st_address" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/st_address/text()" />
+            <PI Name="Value" Value="64 highleigh road" />
+          </OI>
+          <OI NAME="state" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/state/text()" />
+            <PI Name="Value" Value="QLD" />
+          </OI>
+          <OI NAME="subs_prod" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/subs_prod/text()" />
+            <PI Name="Value" Value="automatic" />
+          </OI>
+          <OI NAME="timezone" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[1]/timezone/text()" />
+            <PI Name="Value" Value="Australia/Brisbane" />
+          </OI>
+          <OI NAME="active_1" TYPE="webservice.genericconsume.point.DigitalValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/active/text()" />
+            <PI Name="Value" Value="0" />
+          </OI>
+          <OI NAME="city_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/city/text()" />
+            <PI Name="Value" Value="Cairns North" />
+          </OI>
+          <OI NAME="country_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/country/text()" />
+            <PI Name="Value" Value="Australia" />
+          </OI>
+          <OI NAME="d_type_1" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/d_type/text()" />
+            <PI Name="Value" Value="1" />
+          </OI>
+          <OI NAME="dc_power_1" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/dc_power/text()" />
+            <PI Name="Value" Value="4578" />
+          </OI>
+          <OI NAME="item_2" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/lng_lat/item[1]/text()" />
+            <PI Name="Value" Value="145.772511015" />
+          </OI>
+          <OI NAME="item_3" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/lng_lat/item[2]/text()" />
+            <PI Name="Value" Value="-16.9146271135" />
+          </OI>
+          <OI NAME="postcode_1" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/postcode/text()" />
+            <PI Name="Value" Value="4870" />
+          </OI>
+          <OI NAME="sa_site_name_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/sa_site_name/text()" />
+            <PI Name="Value" Value="Muddy's Cafe" />
+          </OI>
+          <OI NAME="site_classification_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/site_classification/text()" />
+            <PI Name="Value" Value="residential" />
+          </OI>
+          <OI NAME="site_id_1" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/site_id/text()" />
+            <PI Name="Value" Value="23365" />
+          </OI>
+          <OI NAME="site_name_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/site_name/text()" />
+            <PI Name="Value" Value="Muddy's Cafe" />
+          </OI>
+          <OI NAME="st_address_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/st_address/text()" />
+            <PI Name="Value" Value="174 Esplanade" />
+          </OI>
+          <OI NAME="state_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/state/text()" />
+            <PI Name="Value" Value="QLD" />
+          </OI>
+          <OI NAME="subs_prod_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/subs_prod/text()" />
+            <PI Name="Value" Value="automatic" />
+          </OI>
+          <OI NAME="timezone_1" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[2]/timezone/text()" />
+            <PI Name="Value" Value="Australia/Brisbane" />
+          </OI>
+          <OI NAME="active_2" TYPE="webservice.genericconsume.point.DigitalValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/active/text()" />
+            <PI Name="Value" Value="0" />
+          </OI>
+          <OI NAME="city_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/city/text()" />
+            <PI Name="Value" Value="Cairns North" />
+          </OI>
+          <OI NAME="country_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/country/text()" />
+            <PI Name="Value" Value="Australia" />
+          </OI>
+          <OI NAME="d_type_2" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/d_type/text()" />
+            <PI Name="Value" Value="1" />
+          </OI>
+          <OI NAME="dc_power_2" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/dc_power/text()" />
+            <PI Name="Value" Value="9810" />
+          </OI>
+          <OI NAME="item_4" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/lng_lat/item[1]/text()" />
+            <PI Name="Value" Value="145.772524426" />
+          </OI>
+          <OI NAME="item_5" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/lng_lat/item[2]/text()" />
+            <PI Name="Value" Value="-16.9146117165" />
+          </OI>
+          <OI NAME="postcode_2" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/postcode/text()" />
+            <PI Name="Value" Value="4870" />
+          </OI>
+          <OI NAME="sa_site_name_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/sa_site_name/text()" />
+            <PI Name="Value" Value="Muddy's Playground" />
+          </OI>
+          <OI NAME="site_classification_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/site_classification/text()" />
+            <PI Name="Value" Value="residential" />
+          </OI>
+          <OI NAME="site_id_2" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/site_id/text()" />
+            <PI Name="Value" Value="23382" />
+          </OI>
+          <OI NAME="site_name_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/site_name/text()" />
+            <PI Name="Value" Value="Muddy's Playground" />
+          </OI>
+          <OI NAME="st_address_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/st_address/text()" />
+            <PI Name="Value" Value="174 esplanade" />
+          </OI>
+          <OI NAME="state_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/state/text()" />
+            <PI Name="Value" Value="QLD" />
+          </OI>
+          <OI NAME="subs_prod_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/subs_prod/text()" />
+            <PI Name="Value" Value="automatic" />
+          </OI>
+          <OI NAME="timezone_2" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[3]/timezone/text()" />
+            <PI Name="Value" Value="Australia/Brisbane" />
+          </OI>
+          <OI NAME="active_3" TYPE="webservice.genericconsume.point.DigitalValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/active/text()" />
+            <PI Name="Value" Value="0" />
+          </OI>
+          <OI NAME="city_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/city/text()" />
+            <PI Name="Value" Value="Stratford" />
+          </OI>
+          <OI NAME="country_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/country/text()" />
+            <PI Name="Value" Value="Australia" />
+          </OI>
+          <OI NAME="d_type_3" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/d_type/text()" />
+            <PI Name="Value" Value="1" />
+          </OI>
+          <OI NAME="dc_power_3" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/dc_power/text()" />
+            <PI Name="Value" Value="30160" />
+          </OI>
+          <OI NAME="item_6" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/lng_lat/item[1]/text()" />
+            <PI Name="Value" Value="145.732653809" />
+          </OI>
+          <OI NAME="item_7" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/lng_lat/item[2]/text()" />
+            <PI Name="Value" Value="-16.8741860582" />
+          </OI>
+          <OI NAME="postcode_3" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/postcode/text()" />
+            <PI Name="Value" Value="4870" />
+          </OI>
+          <OI NAME="sa_site_name_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/sa_site_name/text()" />
+            <PI Name="Value" Value="Plumbers Depot" />
+          </OI>
+          <OI NAME="site_classification_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/site_classification/text()" />
+            <PI Name="Value" Value="residential" />
+          </OI>
+          <OI NAME="site_id_3" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/site_id/text()" />
+            <PI Name="Value" Value="24887" />
+          </OI>
+          <OI NAME="site_name_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/site_name/text()" />
+            <PI Name="Value" Value="Plumbers Depot" />
+          </OI>
+          <OI NAME="st_address_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/st_address/text()" />
+            <PI Name="Value" Value="magazine street" />
+          </OI>
+          <OI NAME="state_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/state/text()" />
+            <PI Name="Value" Value="QLD" />
+          </OI>
+          <OI NAME="subs_prod_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/subs_prod/text()" />
+            <PI Name="Value" Value="automatic" />
+          </OI>
+          <OI NAME="timezone_3" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[4]/timezone/text()" />
+            <PI Name="Value" Value="Australia/Brisbane" />
+          </OI>
+          <OI NAME="active_4" TYPE="webservice.genericconsume.point.DigitalValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/active/text()" />
+            <PI Name="Value" Value="0" />
+          </OI>
+          <OI NAME="city_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/city/text()" />
+            <PI Name="Value" Value="Smithfield" />
+          </OI>
+          <OI NAME="country_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/country/text()" />
+            <PI Name="Value" Value="Australia" />
+          </OI>
+          <OI NAME="d_type_4" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/d_type/text()" />
+            <PI Name="Value" Value="1" />
+          </OI>
+          <OI NAME="dc_power_4" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/dc_power/text()" />
+            <PI Name="Value" Value="30160" />
+          </OI>
+          <OI NAME="item_8" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/lng_lat/item[1]/text()" />
+            <PI Name="Value" Value="145.694430481" />
+          </OI>
+          <OI NAME="item_9" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/lng_lat/item[2]/text()" />
+            <PI Name="Value" Value="-16.8148643309" />
+          </OI>
+          <OI NAME="postcode_4" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/postcode/text()" />
+            <PI Name="Value" Value="4878" />
+          </OI>
+          <OI NAME="sa_site_name_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/sa_site_name/text()" />
+            <PI Name="Value" Value="Smithfield Library" />
+          </OI>
+          <OI NAME="site_classification_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/site_classification/text()" />
+            <PI Name="Value" Value="residential" />
+          </OI>
+          <OI NAME="site_id_4" TYPE="webservice.genericconsume.point.AnalogValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/site_id/text()" />
+            <PI Name="Value" Value="23511" />
+          </OI>
+          <OI NAME="site_name_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/site_name/text()" />
+            <PI Name="Value" Value="Smithfield Library" />
+          </OI>
+          <OI NAME="st_address_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/st_address/text()" />
+            <PI Name="Value" Value="70 cheviot street" />
+          </OI>
+          <OI NAME="state_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/state/text()" />
+            <PI Name="Value" Value="QLD" />
+          </OI>
+          <OI NAME="subs_prod_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/subs_prod/text()" />
+            <PI Name="Value" Value="automatic" />
+          </OI>
+          <OI NAME="timezone_4" TYPE="webservice.genericconsume.point.StringValue">
+            <PI Name="XPath" Value="/root/data/sites/item[5]/timezone/text()" />
+            <PI Name="Value" Value="Australia/Brisbane" />
+          </OI>
+        </OI>
+      </OI>
+      <OI NAME="Variables" TYPE="system.base.Folder" />
+      <OI NAME="Trends" TYPE="system.base.Folder" />
+    </OI>
+  </ExportedObjects>
+</ObjectSet>
