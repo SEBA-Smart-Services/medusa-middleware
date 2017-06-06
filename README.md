@@ -52,6 +52,7 @@ site_id: 123
 ![Image of StruxureWare Building Operation XML Web Service interfaces to local Medusa Middleware](img/sbo_xml_web_service.png)
 
 ## TODO
+ - Rebuild in Python 3.4 due to Winows 7 [missing dll](https://github.com/pyinstaller/pyinstaller/issues/1588)
  - Support logging
  - Move nssm.exe, install_service.bat into to level winservice dir, remove the src and surplus files
  - Make remove_service.bat
