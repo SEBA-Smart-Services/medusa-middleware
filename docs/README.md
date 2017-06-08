@@ -5,7 +5,7 @@ Medusa Middleware is a helper middleware web service for requesting and transfor
 
 ## Supported interfaces
 Current:
- - [Solar Analytics Public API](http://docs.solaranalyticsapi.apiary.io/#): [Click here](interfaces/solaranalytics) for setup instructions.
+ - [Solar Analytics Public API](http://docs.solaranalyticsapi.apiary.io/#): For setup instructions, [click here](interfaces/solaranalytics).
 
 Planned:
  - [Medusa JSON API](http://medusa-docs.sebbqld.com/)
