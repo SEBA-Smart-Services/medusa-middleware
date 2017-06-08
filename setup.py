@@ -19,7 +19,8 @@ include_files = [
     'README.md',
     'winservice',
     "interfaces",
-    "middleware"
+    "middleware",
+    "docs"
 ]
 
 # Dependencies are automatically detected, but it might need fine tuning.

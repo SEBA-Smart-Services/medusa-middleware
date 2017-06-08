@@ -1,0 +1,13 @@
+certifi==2017.4.17
+chardet==3.0.3
+configparser==3.5.0
+cx-Freeze==5.0.2
+dicttoxml==1.7.4
+falcon==1.2.0
+idna==2.5
+pypiwin32==219
+python-mimeparse==1.6.0
+requests==2.17.3
+six==1.10.0
+urllib3==1.21.1
+waitress==1.0.2
