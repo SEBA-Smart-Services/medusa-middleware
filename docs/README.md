@@ -87,3 +87,7 @@ Example import of Solar Analytics proxy XML web service interface:
  - Serves XML Web Service to StruxureWare. On request makes a request to 3rd party server, transforms response and responds accordingly.
  - Port, url for serving configurable in `config.ini`.
  - 3rd party API credentials configurable in `config.ini`.
+
+### Support or Contact
+
+Having trouble or want to learn more? [contact support](mailto:clive.gross@schneider-electric.com) and we’ll help you sort it out.
