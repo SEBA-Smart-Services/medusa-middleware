@@ -11,36 +11,37 @@ from interfaces.solaranalytics.client import SolarAnalyticsAPI
 # load config
 
 # config file location
-DATA_DIR = '%programdata%\\Schneider Electric\\Medusa Middleware\\'
+# DATA_DIR = '%programdata%\\Schneider Electric\\Medusa Middleware\\'
 CONFIG_FILE = 'config.ini'
 
-def get_abspath_programdata(path):
-    """
-    converts %programdata% path variable to system absolute path
-    returns absolute path str
+# def get_abspath_programdata(path):
+#     """
+#     converts %programdata% path variable to system absolute path
+#     returns absolute path str
 
-    """ 
-    return path.lower().replace('%programdata%', os.environ['ProgramData'])
+#     """ 
+#     return path.lower().replace('%programdata%', os.environ['ProgramData'])
 
-def make_dir(path):
-    """
-    makes directory when path includes %programdata% path variable
-    if not exists
+# def make_dir(path):
+#     """
+#     makes directory when path includes %programdata% path variable
+#     if not exists
 
-    """
-    abspath = get_abspath_programdata(path)
-    if not os.path.exists(abspath):
-            os.makedirs(abspath)    
+#     """
+#     abspath = get_abspath_programdata(path)
+#     if not os.path.exists(abspath):
+#             os.makedirs(abspath)    
 
 # make ProgramData directory for config
-make_dir(get_abspath_programdata(DATA_DIR))
+# make_dir(get_abspath_programdata(DATA_DIR))
 
 # create ConfigParser object
 config = configparser.ConfigParser()
 
 # read in config from config files
-master_config_file = get_abspath_programdata(DATA_DIR) + CONFIG_FILE
-config.read(master_config_file)
+# master_config_file = get_abspath_programdata(DATA_DIR) + CONFIG_FILE
+# config.read(master_config_file)
+config.read(CONFIG_FILE)
 
 
 ###################################

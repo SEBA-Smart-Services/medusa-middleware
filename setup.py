@@ -34,10 +34,6 @@ packages = [
     "idna"
 ]
 
-# include = [
-    
-# ]
-
 build_exe_options = {
     "packages": packages,
     "excludes": ["tkinter"],
