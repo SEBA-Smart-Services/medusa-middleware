@@ -28,7 +28,7 @@ In a nutshell, Medusa Middleware uses the following technology:
 - Installed as a Windows Service using [the Non-Sucking Service Manager](http://nssm.cc).
 
 ## Installation
-1. Download the [Windows installer MSI](../dist/Medusa Middleware-0.1-win32.msi). Ignore any warnings from the web browser about the file being unsafe.
+1. Download the [Windows installer MSI](https://github.com/SEBA-Smart-Services/medusa-middleware/raw/master/dist/Medusa%20Middleware-0.1-win32.msi). Ignore any warnings from the web browser about the file being unsafe.
 2. Install as a Windows Service: Navigate to `%programfiles%/Schneider Electric/Medusa Middleware/winservice` and run `install_service_xxx.bat`, based on whether the Windows platform is 32-bit or 64-bit. (This nonsense will be fixed in a later version).
 4. Edit config file: see next section.
 5. Start the service: Open Services `services.msc` and start `Medusa Middleware`.
