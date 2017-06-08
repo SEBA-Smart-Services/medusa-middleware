@@ -17,7 +17,7 @@ Planned:
 ![Image of System Architecture](img/architecture.png)
 
 ## Contributing
-[Click here](contribute/README) to learn how to contribute.
+[Click here](contribute) to learn how to contribute.
 
 In a nutshell, Medusa Middleware uses the following technology:
 - Developed in [python 3.4](https://www.python.org/). At present, later versions are problematic compiling with cx_Freeze.
