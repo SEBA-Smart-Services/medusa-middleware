@@ -1,7 +1,17 @@
 # Medusa Middleware
 A lightweight middleware service for StruxureWare Building Operation.
 
-Medusa Middleware is a helper middleware web service for transforming data from unsupported protocols and data formats (eg JSON) into an easily accessible XML Web Service for StruxureWare Building Operation. Medusa Middleware can be used to allow StruxureWare Building Operation and SmartStruxure Servers to consume and serve data to 3rd party om-premise or cloud based services.
+Medusa Middleware is a helper middleware web service for transforming data from unsupported protocols and data formats (eg JSON) into an easily consumable XML Web Service for StruxureWare Building Operation. Medusa Middleware can be used to allow StruxureWare Building Operation and SmartStruxure Servers to consume (and eventually serve) data from 3rd party on-premise or cloud based services.
+
+## Supported interfaces
+Current:
+ - [Solar Analytics Public API](http://docs.solaranalyticsapi.apiary.io/#)
+ 
+Planned:
+ - [Medusa JSON API](http://medusa-docs.sebbqld.com/)
+ - Generic [JSON REST API](https://en.wikipedia.org/wiki/Representational_state_transfer)
+ - Generic [OPC](https://en.wikipedia.org/wiki/OPC_Data_Access)
+ - Generic [SNMP](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol)
 
 ## Architecture
 ![Image of System Architecture](img/architecture.png)
