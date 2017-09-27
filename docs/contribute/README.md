@@ -9,7 +9,7 @@ Feel free to clone a copy of the repo and tailor to your needs.
 - Runs on a [waitress web server](http://docs.pylonsproject.org/projects/waitress/en/latest/).
 - Serves XML Web API Service to StruxureWare using [Falcon Framework](https://falconframework.org/).
 - Retrieves 3rd party data for transformation using [requests](http://docs.python-requests.org/en/master/).
-- Compiled to exe/msi installer using [cx_Freeze]().
+- Compiled to exe/msi installer using [cx_Freeze](https://anthony-tuininga.github.io/cx_Freeze/) and [Inno Setup](http://www.jrsoftware.org/isinfo.php).
 - Installed as a Windows Service using [the Non-Sucking Service Manager](http://nssm.cc).
 
 ## Compiling
