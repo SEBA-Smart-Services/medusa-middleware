@@ -10,8 +10,10 @@ Usage:
 import sys
 from cx_Freeze import setup, Executable
 
-company_name = 'Schneider Electric'
-product_name = 'Medusa Middleware'
+COMPANY_NAME = 'Schneider Electric'
+PRODUCT_NAME = 'Medusa Middleware'
+PRODUCT_DESCRIPTION = "A lightweight middleware service for StruxureWare Building Operation."
+VERSION = "0.1.0"
 
 include_files = [
     'config.ini',
@@ -20,7 +22,8 @@ include_files = [
     'winservice',
     "interfaces",
     "middleware",
-    "docs"
+    "docs",
+    "medusa.ico"
 ]
 
 # Dependencies are automatically detected, but it might need fine tuning.
@@ -43,7 +46,7 @@ build_exe_options = {
 
 bdist_msi_options = {
     'add_to_path': True,
-    'initial_target_dir': r'[ProgramFilesFolder]\%s\%s' % (company_name, product_name),
+    'initial_target_dir': r'[ProgramFilesFolder]\%s\%s' % (COMPANY_NAME, PRODUCT_NAME),
 }
 
 # GUI applications require a different base on Windows (the default is for a
@@ -51,9 +54,9 @@ bdist_msi_options = {
 base = None
 
 setup(
-    name = "Medusa Middleware",
-    version = "0.1",
-    description = "A lightweight middleware service for StruxureWare Building Operation.",
+    name = PRODUCT_NAME,
+    version = VERSION,
+    description = PRODUCT_DESCRIPTION,
     options = {
         'build_exe': build_exe_options,
         'bdist_msi': bdist_msi_options

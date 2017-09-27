@@ -1,5 +1,6 @@
 import falcon
 import dicttoxml
+import logging
 from wsgiref import simple_server
 from waitress import serve
 import configparser
